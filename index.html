@@ -24,16 +24,21 @@
           <span class="brand__text">CARBONO</span>
         </a>
 
-        <nav class="topbar__nav" aria-label="Navegación principal">
+        <nav class="topbar__nav" id="topbarNav" aria-label="Navegación principal">
           <a class="topbar__link" href="#inicio">Home</a>
           <a class="topbar__link" href="#nosotros">Nosotros</a>
           <a class="topbar__link" href="#productos">Productos</a>
           <a class="topbar__link" href="#clientes">Clientes</a>
         </nav>
 
-        <a class="btn btn--secondary topbar__cta" href="#contacto"
-          >Contactanos</a
-        >
+        <div class="topbar__actions">
+          <a class="btn btn--secondary topbar__cta" href="#contacto">Contactanos</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+          </button>
+        </div>
       </div>
     </header>
 

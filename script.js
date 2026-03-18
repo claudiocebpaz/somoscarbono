@@ -204,5 +204,32 @@
     return;
   }
 
+  // --- Navbar Mobile Toggle ---
+  const menuToggle = document.getElementById("menuToggle");
+  const topbarNav = document.getElementById("topbarNav");
+
+  if (menuToggle && topbarNav) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = topbarNav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Close menu when clicking a link
+    topbarNav.addEventListener("click", (e) => {
+      if (e.target.classList.contains("topbar__link")) {
+        topbarNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!menuToggle.contains(e.target) && !topbarNav.contains(e.target)) {
+        topbarNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   updateTargetFromScroll();
 })();
