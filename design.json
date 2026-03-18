@@ -1,0 +1,138 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Almarai",
+      "role": "body"
+    },
+    {
+      "family": "Instrument Serif",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#CDC8BA",
+    "accent": "#CDC8BA",
+    "background": "#F6F3EC",
+    "surface": "#F0ECE3",
+    "surfaceAlt": "#ECE8DF",
+    "textPrimary": "#302922",
+    "link": "#302922",
+    "line": "rgba(48, 41, 34, 0.2)"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Almarai",
+      "heading": "Instrument Serif"
+    },
+    "fontStacks": {
+      "heading": ["Instrument Serif"],
+      "body": ["sans-serif"],
+      "paragraph": ["Almarai"]
+    },
+    "fontSizes": {
+      "h1": "clamp(35.2px, 5.6vw, 94.4px)",
+      "h2": "clamp(40px, 7.1vw, 109.6px)",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "18px"
+  },
+  "components": {
+    "input": {
+      "background": "#FFFFFF",
+      "textColor": "#000000",
+      "borderColor": "#D8D6D0",
+      "borderRadius": "18px",
+      "borderRadiusCorners": {
+        "topLeft": "18px",
+        "topRight": "18px",
+        "bottomRight": "18px",
+        "bottomLeft": "18px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#CDC8BA",
+      "textColor": "#000000",
+      "borderRadius": "300px",
+      "borderRadiusCorners": {
+        "topLeft": "300px",
+        "topRight": "300px",
+        "bottomRight": "300px",
+        "bottomLeft": "300px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#302922",
+      "textColor": "#FFFFFF",
+      "borderRadius": "300px",
+      "borderRadiusCorners": {
+        "topLeft": "300px",
+        "topRight": "300px",
+        "bottomRight": "300px",
+        "bottomLeft": "300px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://images.squarespace-cdn.com/content/v1/688a5e5dd54e8b67e18f70b3/b9c5635f-e684-498f-ad5e-282dea1515e5/carbono-rectangular-logo-transparente.png?format=1500w",
+    "favicon": "https://images.squarespace-cdn.com/content/v1/688a5e5dd54e8b67e18f70b3/2e86744d-9fc6-4b82-abd8-76f13ca2c761/favicon.ico?format=100w",
+    "ogImage": "http://static1.squarespace.com/static/688a5e5dd54e8b67e18f70b3/t/6890faafdc1d4f1c6293069f/1754331823790/carbono-rectangular-logo-transparente.png?format=1500w",
+    "logoHref": "/",
+    "logoAlt": "Your Site Title"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 1,
+    "reasoning": "Selected #1 because it is visible, located in the header, links to the homepage, and matches the brand inferred from the URL.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 2,
+      "text": "Suscribirme",
+      "reasoning": "Button #2 ('Suscribirme') has a distinct accent color (#CDC8BA) that stands out from the other buttons, making it the primary call-to-action."
+    },
+    "secondary": {
+      "index": 0,
+      "text": "Contactanos",
+      "reasoning": "Button #0 ('Contactanos') is a secondary action with a different background color (#302922) from the primary button, suitable for a secondary CTA."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "minimalist",
+    "energy": "medium",
+    "targetAudience": "environmentally conscious individuals"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 1,
+        "selectedLogoReasoning": "Selected #1 because it is visible, located in the header, links to the homepage, and matches the brand inferred from the URL.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}

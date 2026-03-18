@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbono — Bolsas recicladas con diseño y propósito</title>
+    <meta
+      name="description"
+      content="Carbono: diseño circular con impacto real. Bolsas recicladas y personalizables para marcas conscientes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="Encabezado principal">
+      <div class="shell topbar__inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio de Carbono">
+          <span class="brand__symbol" aria-hidden="true">©</span>
+          <span class="brand__text">CARBONO</span>
+        </a>
+
+        <nav class="topbar__nav" aria-label="Navegación principal">
+          <a class="topbar__link" href="#inicio">Home</a>
+          <a class="topbar__link" href="#nosotros">Nosotros</a>
+          <a class="topbar__link" href="#productos">Productos</a>
+          <a class="topbar__link" href="#clientes">Clientes</a>
+        </nav>
+
+        <a class="btn btn--secondary topbar__cta" href="#contacto"
+          >Contactanos</a
+        >
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" id="hero">
+        <div class="hero__sticky">
+          <div class="shell hero__content">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">
+                Diseño circular • Impacto social • Personalización
+              </p>
+              <h1 id="hero-title">
+                Convertimos desechos en productos duraderos con propósito.
+              </h1>
+              <p class="hero__description">
+                1 bolsa = 7 botellas recicladas. Creamos bolsas resistentes,
+                personalizables y alineadas con marcas que buscan comunicar un
+                consumo más consciente.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#comprar">Suscribirme</a>
+                <a class="btn btn--secondary" href="#contacto">Contactanos</a>
+              </div>
+            </div>
+
+            <figure class="hero__visual" aria-label="Vista rotatoria del bolso">
+              <div class="hero__split" aria-hidden="true">
+                <div class="hero__split-left"></div>
+                <div class="hero__split-right"></div>
+              </div>
+              <div class="hero__glow" aria-hidden="true"></div>
+              <figcaption class="hero__overlay" aria-hidden="true">
+                <p>
+                  1 bolsa = 7 botellas recicladas<br />
+                  Diseño con propósito.<br />
+                  Impacto real.
+                </p>
+                <span class="hero__overlay-btn">Conocer más</span>
+              </figcaption>
+              <canvas
+                id="bagCanvas"
+                class="hero__canvas"
+                role="img"
+                aria-label="Bolso girando según el desplazamiento"
+              ></canvas>
+              <img
+                id="bagFallback"
+                class="hero__fallback"
+                src="imagenes-bolso/ezgif-frame-004.webp"
+                alt="Bolso color ciruela"
+                loading="eager"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="values" aria-label="Valores de marca">
+        <div class="shell">
+          <ul class="values__list">
+            <li>Cerramos el ciclo de la economía circular</li>
+            <li>Líderes en soluciones ecológicas</li>
+            <li>
+              Convertimos desechos en productos de alto impacto ambiental y
+              social
+            </li>
+            <li>Creamos productos duraderos, personalizados y sostenibles</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="manifesto" aria-label="Manifiesto Carbono">
+        <div class="shell">
+          <h2 class="manifesto__title">
+            Donde la innovación, el diseño y la responsabilidad ambiental van de
+            la mano.
+          </h2>
+        </div>
+      </section>
+
+      <section class="about" id="nosotros" aria-label="Sobre Carbono">
+        <div class="shell about__grid">
+          <figure class="about__media">
+            <img
+              src="imagenes-bolso/ezgif-frame-080.webp"
+              alt="Persona usando bolsa reciclada Carbono"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+
+          <div class="about__copy">
+            <h3>Somos una empresa B2B de impacto real</h3>
+            <p>
+              Ofrecemos soluciones prácticas, de diseño y con compromiso para
+              marcas que quieren comunicar propósito sin resignar identidad.
+            </p>
+            <p>
+              Nuestras bolsas están fabricadas a partir de botellas de plástico
+              recuperado y materiales resistentes RPET210, con procesos
+              responsables y éticos.
+            </p>
+            <p>
+              Cada producto es 100% personalizable con logo, diseño o mensaje,
+              junto con packaging a medida para potenciar la experiencia de
+              marca.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="product" id="productos" aria-label="Detalle de producto">
+        <div class="shell product__inner">
+          <h3>Producto ✶</h3>
+
+          <ol class="feature-list">
+            <li class="feature-list__item">
+              <span class="feature-list__number">01</span>
+              <div>
+                <h4>Personalización y packaging</h4>
+                <p>
+                  La bolsa es 100% personalizable con diseño, logo o mensaje.
+                  Una forma concreta de comunicar identidad y compromiso de
+                  marca en cada acción.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-list__item">
+              <span class="feature-list__number">02</span>
+              <div>
+                <h4>Composición</h4>
+                <p>
+                  Fabricada con RPET210 a partir de plástico recuperado,
+                  seleccionamos materiales durables para extender la vida útil
+                  del producto y reducir residuos.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature-list__item">
+              <span class="feature-list__number">03</span>
+              <div>
+                <h4>Impacto estratégico</h4>
+                <p>
+                  Pensada para campañas, acciones promocionales y experiencias
+                  de marca que impulsan un consumo más consciente.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="clients" id="clientes" aria-label="Clientes y beneficios">
+        <div class="shell clients__grid">
+          <article class="client-card">
+            <h3>+120 marcas</h3>
+            <p>
+              Empresas de retail, eventos y consumo masivo ya integran Carbono
+              en sus acciones.
+            </p>
+          </article>
+          <article class="client-card">
+            <h3>100% personalizable</h3>
+            <p>
+              Producción adaptable por volumen, diseño, colores y mensaje de
+              campaña.
+            </p>
+          </article>
+          <article class="client-card">
+            <h3>Impacto medible</h3>
+            <p>
+              Cada entrega contribuye a reducir plástico de un solo uso y
+              comunicar compromiso ambiental.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta" id="comprar" aria-label="Llamado a la acción">
+        <div class="shell cta__inner" id="contacto">
+          <h3>Tu próxima campaña puede dejar huella positiva.</h3>
+          <p>
+            Diseñamos una propuesta a medida para tu marca: producto,
+            personalización y logística responsable.
+          </p>
+          <a class="btn btn--primary" href="mailto:hola@somoscarbono.com"
+            >hola@somoscarbono.com</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer__inner">
+        <p>© Carbono — Diseño circular para marcas conscientes.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
